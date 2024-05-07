@@ -52,4 +52,3 @@ Users should be able to:
 
 - GitHub - [ren](https://github.com/ktmagno)
 - Frontend Mentor - [@ktmagno](https://www.frontendmentor.io/profile/ktmagno)
-- Twitter - [@ktmagno](https://www.twitter.com/ktmagno)
