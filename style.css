@@ -12,11 +12,9 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
-}
-
-#desktop-img {
-  top: 0;
-  position: fixed;
+  background-image: url(./assets/images/background-pattern-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 h1 {
@@ -44,8 +42,7 @@ p {
   min-height: fit-content;
   z-index: 1000;
   position: relative;
-  margin-top: 190px;
-  display: block;
+  margin-top: 150px;
   position: relative;
 }
 
@@ -143,12 +140,48 @@ h2:focus {
   color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1440px) {
+  .container {
+    margin-top: 190px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .container {
+    margin-top: 160px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    margin-top: 140px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .container {
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-weight: 700;
+    font-size: 30px;
+    margin: -15px 0px 30px 50px;
+  }
   h2 {
     width: 85%;
   }
   .container {
     width: 402px;
+    margin-top: 90px;
   }
   #minus1 {
     display: flex;
@@ -205,9 +238,32 @@ h2:focus {
     position: absolute;
     margin: -40px 0px 10px 300px;
   }
+
+  #star {
+    width: 25px;
+    position: absolute;
+    margin: -15px 0px 30px 0px;
+  }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 800px) {
+  .container {
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    background-image: url(./assets/images/background-pattern-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
   h1 {
     font-weight: 700;
     font-size: 30px;
@@ -215,6 +271,7 @@ h2:focus {
   }
 
   .container {
+    margin-top: 200px;
     width: 350px;
     border-radius: 10px;
   }
@@ -281,128 +338,145 @@ h2:focus {
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 400px) {
   .container {
-    width: 250px;
-    border-radius: 10px;
-    padding: 2em;
+    margin-top: 130px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    margin-top: 140px;
   }
 
   #minus1 {
     display: flex;
     flex-direction: row;
     position: absolute;
-    margin: -40px 0px 10px 170px;
+    margin: -35px 0px 10px 250px;
   }
 
   #minus2 {
     display: flex;
     flex-direction: row;
     position: absolute;
-    margin: -35px 0px 10px 170px;
+    margin: -25px 0px 10px 250px;
   }
 
   #minus3 {
     display: flex;
     flex-direction: row;
     position: absolute;
-    margin: -45px 0px 10px 170px;
+    margin: -35px 0px 10px 250px;
   }
 
   #minus4 {
     display: flex;
     flex-direction: row;
     position: absolute;
-    margin: -45px 0px 10px 170px;
+    margin: -40px 0px 10px 250px;
   }
 
   #plus1 {
     display: flex;
     flex-direction: row;
     position: absolute;
-    margin: -40px 0px 10px 170px;
+    margin: -35px 0px 10px 250px;
   }
 
   #plus2 {
     display: flex;
     flex-direction: row;
     position: absolute;
-    margin: -35px 0px 10px 170px;
+    margin: -25px 0px 10px 250px;
   }
 
   #plus3 {
     display: flex;
     flex-direction: row;
     position: absolute;
-    margin: -45px 0px 10px 170px;
+    margin: -35px 0px 10px 250px;
   }
 
   #plus4 {
     display: flex;
     flex-direction: row;
     position: absolute;
-    margin: -45px 0px 10px 170px;
+    margin: -40px 0px 10px 250px;
+  }
+}
+
+@media (max-width: 300px) {
+  body {
+    background-image: url(./assets/images/background-pattern-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
-  @media (max-width: 280px) {
-    h2 {
-      width: 80%;
-    }
+  .container {
+    width: 250px;
+    border-radius: 10px;
+    padding: 2em;
+    margin-top: 80px;
+  }
 
-    #minus1 {
-      display: flex;
-      flex-direction: row;
-      position: absolute;
-      margin: -45px 0px 10px 160px;
-    }
+  h2 {
+    width: 80%;
+  }
 
-    #minus2 {
-      display: flex;
-      flex-direction: row;
-      position: absolute;
-      margin: -35px 0px 10px 160px;
-    }
+  #minus1 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin: -45px 0px 10px 160px;
+  }
 
-    #minus3 {
-      display: flex;
-      flex-direction: row;
-      position: absolute;
-      margin: -55px 0px 10px 160px;
-    }
+  #minus2 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin: -35px 0px 10px 160px;
+  }
 
-    #minus4 {
-      display: flex;
-      flex-direction: row;
-      position: absolute;
-      margin: -45px 0px 10px 160px;
-    }
+  #minus3 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin: -55px 0px 10px 160px;
+  }
 
-    #plus1 {
-      display: flex;
-      flex-direction: row;
-      position: absolute;
-      margin: -45px 0px 10px 160px;
-    }
+  #minus4 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin: -45px 0px 10px 160px;
+  }
 
-    #plus2 {
-      display: flex;
-      flex-direction: row;
-      position: absolute;
-      margin: -35px 0px 10px 160px;
-    }
+  #plus1 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin: -45px 0px 10px 160px;
+  }
 
-    #plus3 {
-      display: flex;
-      flex-direction: row;
-      position: absolute;
-      margin: -55px 0px 10px 160px;
-    }
+  #plus2 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin: -35px 0px 10px 160px;
+  }
 
-    #plus4 {
-      display: flex;
-      flex-direction: row;
-      position: absolute;
-      margin: -45px 0px 10px 160px;
-    }
+  #plus3 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin: -55px 0px 10px 160px;
+  }
+
+  #plus4 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin: -45px 0px 10px 160px;
   }
 }
